@@ -1,0 +1,408 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::selection {
+  background-color: #fff;
+  color: #95c11e;
+}
+
+.cursor {
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background-color: #95c11e;
+  position: fixed;
+  z-index: 999;
+}
+
+.cursor-blur {
+  height: 250px;
+  width: 250px;
+  border-radius: 70%;
+  background-color: #96c11e6b;
+  filter: blur(45px);
+  position: fixed;
+  z-index: 8;
+}
+
+.nav {
+  width: 100%;
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 150px;
+  gap: 50px;
+  position: fixed;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.nav img {
+  height: 70px;
+}
+
+.nav h4 {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.bg-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  z-index: -10;
+}
+
+.main {
+  position: relative;
+  background-color: rgb(0, 0, 0, 0.3);
+}
+
+.hero-sec {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 10;
+}
+
+.hero-sec h1 {
+  font-size: 85px;
+  font-weight: 900;
+  position: relative;
+}
+
+.hero-sec h1::before {
+  content: "EAT. DRINK. PLAY.";
+  color: #000;
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  -webkit-text-stroke: 2px #95c11e;
+  z-index: -1;
+}
+
+.hero-sec h2 {
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.hero-sec p {
+  font-size: 14px;
+  font-weight: 200;
+  width: 58%;
+}
+
+.about-sec {
+  min-height: 100vh;
+  width: 100%;
+  z-index: 10;
+}
+
+.scroller {
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative;
+  z-index: 10;
+}
+
+.scroller ::-webkit-scrollbar {
+  display: none;
+}
+
+.scrl-txt {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll 40s linear infinite;
+}
+
+.scroller h4 {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 90px;
+  font-weight: 900;
+  margin-right: 20px;
+  color: #000;
+  -webkit-text-stroke: 2px #fff;
+  transition: all linear 0.3s;
+}
+
+.scroller h4:hover {
+  color: #95c11e;
+  -webkit-text-stroke: transparent;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.about-us {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 60px;
+  margin-top: 80px;
+  position: relative;
+  z-index: 10;
+}
+
+.about-us img {
+  height: 140px;
+  width: 140px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.about-txt {
+  width: 60%;
+  text-align: center;
+}
+
+.about-txt h3 {
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.about-txt p {
+  font-size: 20px;
+  line-height: 35px;
+  padding: 0 14px;
+}
+
+.card-container {
+  height: 76vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 80px;
+  position: relative;
+  z-index: 10;
+}
+
+.card {
+  height: 80%;
+  width: 24%;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: all ease 0.4s;
+}
+
+#card-1 {
+  background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+}
+
+#card-2 {
+  background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+}
+
+#card-3 {
+  background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-lessons.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #95c11e;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  opacity: 0;
+  transition: all ease 0.4s;
+}
+
+.overlay h4 {
+  color: #000;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.overlay p {
+  color: #000;
+  font-size: 14px;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.cta-banner {
+  height: 30vh;
+  width: 100%;
+  background: linear-gradient(to left bottom, #119f3a, #ace022);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 80px;
+  position: relative;
+  z-index: 10;
+}
+
+.cta-banner h4 {
+  width: 50%;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.cta-banner img {
+  height: 100%;
+  width: 10%;
+  object-fit: cover;
+}
+
+.cta-banner .dot-img-left {
+  rotate: 180deg;
+}
+
+.quote-sec {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+}
+
+.quote-sec > p {
+  width: 65%;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 45px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.quote-sec img {
+  position: absolute;
+  height: 45px;
+}
+
+.quote-sec #upper-quote {
+  top: 18%;
+  left: 15%;
+}
+
+.quote-sec #lower-quote {
+  bottom: 18%;
+  right: 15%;
+}
+
+.what-sec {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 80px;
+  position: relative;
+  z-index: 10;
+}
+
+.box {
+  height: 62%;
+  width: 28%;
+  overflow: hidden;
+  border-radius: 20px;
+  position: relative;
+}
+
+.box h2 {
+  height: 100%;
+  width: 100%;
+  background-color: #95c11e;
+  color: #000;
+  font-size: 24px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  transition: all ease 0.4s;
+  position: absolute;
+  z-index: 10;
+}
+
+.box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  scale: 1.1;
+  transition: all ease 0.4s;
+}
+
+.box:hover h2 {
+  scale: 1.1;
+  color: #fff;
+  background-color: transparent;
+}
+
+.box:hover img {
+  scale: 1;
+}
+
+.what-sec h1 {
+  font-size: 66px;
+  font-weight: 900;
+  top: -7%;
+  color: #000;
+  -webkit-text-stroke: 1px #fff;
+  position: absolute;
+}
+
+.footer {
+  height: 40vh;
+  width: 100%;
+  background: linear-gradient(to left bottom, #119f3a, #ace022);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  position: relative;
+  z-index: 10;
+}
