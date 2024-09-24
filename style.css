@@ -219,33 +219,33 @@ body {
   width: 24%;
   border-radius: 20px;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   overflow: hidden;
   transition: all ease 0.4s;
 }
 
 #card-1 {
-  background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-toptracer.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+  background-image: url(/jurassic_park.jpg);
 }
 
 #card-2 {
-  background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+  background-image: url(/lost_world_jurassic_park.jpg);
 }
 
 #card-3 {
-  background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-lessons.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+  background-image: url(/jurassic_park_iii.jpg);
 }
 
 #card-4 {
-  background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-lessons.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+  background-image: url(/jurassic_world.jpg);
 }
 
 #card-5 {
-  background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-lessons.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+  background-image: url(/jurassic_world_fallen_kingdom.jpg);
 }
 
 #card-6 {
-  background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/home-lessons.jpg?strip=all&lossy=1&sharp=1&ssl=1);
+  background-image: url(/jurassic_world_dominion.jpg);
 }
 
 .overlay {
@@ -310,68 +310,6 @@ body {
 .cta-banner .dot-img-left {
   rotate: 180deg;
 }
-
-/* .cast-container {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 35px;
-  margin-top: 120px;
-  margin-bottom: 80px;
-  position: relative;
-  z-index: 10;
-}
-.cast-container {
-  animation: marquee 10s linear infinite;
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-.cast-card {
-  height: 50%;
-  min-width: 20%;
-  border-radius: 20px;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-  transition: all ease 0.4s;
-  flex-shrink: 0;
-}
-
-.cast-overlay {
-  height: 100%;
-  width: 100%;
-  background-color: #95c11e;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  opacity: 0;
-  transition: all ease 0.4s;
-}
-
-.cast-overlay h4 {
-  color: #000;
-  font-size: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.cast-card:hover .cast-overlay {
-  opacity: 1;
-}
-
-#cast-1 {
-  background-image: url(https://m.media-amazon.com/images/M/MV5BY2I4MGI5ZmItZWNlNy00ZTZkLWJhMTgtMDhmYTRmNzUwNTI3XkEyXkFqcGc@._V1_FMjpg_UY2048_.jpg);
-} */
 
 .quote-sec {
   height: 100vh;
@@ -447,6 +385,7 @@ body {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  object-position: top;
   scale: 1.1;
   transition: all ease 0.4s;
 }
@@ -471,17 +410,15 @@ body {
 }
 
 .footer {
-  height: 20vh;
+  height: 50px;
   width: 100%;
   background: linear-gradient(to left bottom, #119f3a, #ace022);
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-
+  justify-content: center;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
   position: relative;
   z-index: 10;
-}
-
-.footer img {
-  height: 70px;
 }
