@@ -10,7 +10,7 @@ A simple webpage about the Jurassic Park movie franchise, using HTML, CSS, JavaS
 
 ## Technologies Used
 
-HTML
-CSS
-JavaScript
-GSAP for animations
+- HTML
+- CSS
+- JavaScript
+- GSAP for animations
