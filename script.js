@@ -33,15 +33,13 @@ gsap.from(".about-us img, .about-txt", {
   },
 });
 
-gsap.from(".card-container .card", {
+gsap.from(".card", {
   opacity: 0,
-  scale: 0.5,
-  stagger: 0.5,
-  duration: 0.5,
+  scale: 0.9,
   scrollTrigger: {
     trigger: ".card-container",
     scroller: "body",
-    start: "top 60%",
+    start: "top 90%",
     end: "top 55%",
     scrub: 3,
   },
