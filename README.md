@@ -1,6 +1,7 @@
 # Jurassic Park Webpage
 
 A simple webpage about the Jurassic Park movie franchise, using HTML, CSS, JavaScript and GSAP for animations.
+[ not responsive yet; for a better experience, use desktop view. ]
 
 ## Features
 
